@@ -1,0 +1,11 @@
+body {
+	background-image: url("../images/backgroundBlackWhite.jpg");
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+canvas {
+	background-image: url("../images/sky2.jpg");
+	display: block;
+}

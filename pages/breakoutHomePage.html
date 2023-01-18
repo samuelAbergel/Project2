@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link rel="stylesheet" type="text/css" href="../style/breakoutHomePage.css">
+    <!---google fonts link--->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div id="welcome-screen">
+		<h1>Welcome to our game!</h1>
+		<p>Please select a difficulty level:</p>
+		<div id="difficulty-selector">
+			<button class="difficulty-button easy" onclick="test(1)">Easy</button>
+			<button class="difficulty-button medium" onclick="test(2)">Medium</button>
+			<button class="difficulty-button hard" onclick="test(4)">Difficult</button>
+		</div>
+	</div>
+	<script type="text/javascript">
+		function test(number){
+			window.open(`breakout.html?mode=${number}`,"_self");
+		}
+	</script>
+</body>
+</html>
